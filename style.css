@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #181719;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header {
+    margin-top: 40px;
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-bottom: auto;
+}
+
+nav{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Crimson Pro', monospace;
+    font-weight: 200;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    border: white 1px solid;
+    padding: 8px;
+    transition: all 0.6s;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+.nav-li{
+    list-style: none;
+    font-family: 'Montserrat', monospace;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-li:not(:last-child) {
+    margin-right: 86px;
+}
+
+.active {
+    font-weight: 700;
+    border-bottom: white 2px solid;
+}
+
+#hamburger {
+    display: none;
+}
+
+#close {
+    display: none;
+}
+
+#ul {
+    display: none;
+}
+
+.main {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: auto;
+}
+
+.main h1{
+    font-family: 'Lora', monospace;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+.main-p{
+    font-family: 'Montserrat', monospace;
+    font-weight: 400;
+    font-size: 24px;
+    width: 400px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.read-more-link{
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', monospace;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.6s;
+}
+
+.read-more-link:hover > #arrow-right {
+    transform: translateX(15px);
+}
+
+#arrow-right{
+    font-size: 15px;
+    transition: all 0.6s;
+    margin-left: 5px;
+}
+
+.image-and-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo1 {
+    width: 740px;
+    margin-top: 100px;
+}
+
+.main-card {
+    background-color: #181719;
+    width: 410px;
+    padding: 23px 0 34px 26px;
+    transform: translate(120px, -80px);
+    box-shadow: 0px 10px 10px -5px black;
+}
+
+.photo2 {
+    width: 50px;
+    border-radius: 37px;
+}
+
+.name {
+    font-family: 'Montserrat', monospace;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.job-title {
+    color: #828282;
+    font-family: 'Montserrat', monospace;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.first-row {
+    display: flex;
+    align-items: center;
+}
+
+.name-and-job-title {
+    margin-left: 20px;
+}
+
+.card-info {
+    font-family: 'Lora', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    width: 250px;
+    margin-top: 25px;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 24px;
+}
+
+footer p{
+    font-family: "Montserrat", monospace;
+    font-weight: 400;
+    font-size: 14px;
+    color: #A9A9A9;
+    text-align: center;
+}
+
+footer p a{
+    text-decoration: none;
+    color: #A9A9A9;
+}
+
+@media (max-width: 600px){
+    header {
+        margin: 19px 12px 40px 12px;
+    }
+
+    #nav-ul{
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    #close {
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .main {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 12px;
+        align-items: flex-start;
+    }
+
+    .main h1{
+        font-size: 42px;
+    }
+
+    .main-p {
+        font-size: 18px;
+        width: 300px;
+    }
+
+    .read-more-link {
+        font-size: 16px;
+    }
+
+    .image-and-card {
+        margin-top: -50px;
+    }
+
+    .photo1 {
+        width: 550px;
+    }
+
+    .main-card {
+        transform: translate(0, -80px);
+    }
+
+    #ul {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #ul li {
+        list-style: none;
+        font-family: 'Montserrat', monospace;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    #ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #ul li .active {
+        padding-bottom: 8px;
+    }
+
+    #ul li:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
