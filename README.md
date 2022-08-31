@@ -49,7 +49,11 @@
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb) was to build a page to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/TtUjDt19eIHxNQ4n5jps) was to build an application to complete the following user stories:
+
+- [x] **User story:** I can see a page following the given design
+- [x] **User story:** On mobile, I can see a collapsed navigation
+- [x] **User story:** On mobile, when I select the hamburger menu, I can see a navigation
 
 ## Contact
 
